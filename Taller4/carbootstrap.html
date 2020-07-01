@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HTML FORMULARIO CAR SIN CSS, NI NINGÚN FRAMEWORK-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Formulario Vehiculo Bootstrap</title>
+</head>
+
+<body>
+    <main>
+        <center><h2>Llena el formulario sobre tu vehiculo</h2></center>
+        <div class="form-group">
+            <form method="POST">
+                <fieldset>
+                    <legend>Información Básica</legend>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="id_coche">Identificador Coche</label>
+                            <select id="id_coche" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="id_pais">País: </label>
+                            <select id="id_pais" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="1">Colombia</option>
+                                <option value="2">Perú</option>
+                                <option value="3">Ecuador</option>
+                                <option value="4">Argentina</option>
+                                <option value="5">Chile</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="id_movidoa">Tu coche funciona con: </label>
+                            <select id="id_movidoa" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="gasolina">Gasolina</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="gas">Gas Natural</option>
+                                <option value="electricidad">Electricidad</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="id_tipocoche">Que tipo de coche tienes: </label>
+                            <select id="id_tipocoche" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="familiar">Familiar</option>
+                                <option value="personal">Personal</option>
+                                <option value="deportivo">Deportivo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="id_estado">Estado: </label>
+                            <select id="id_estado" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="nuevo">Nuevo</option>
+                                <option value="medio">Menos de 50.000 KM</option>
+                                <option value="viejo">Más de 50.000 KM</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="id_marca">Marca: </label>
+                            <select id="id_marca" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="mercedes">Mercedes-Benz</option>
+                                <option value="renault">Renault</option>
+                                <option value="chevrolet">Chevrolet</option>
+                                <option value="mazda">Mazda</option>
+                                <option value="toyota">Toyota</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="id_usr">Usuario: </label>
+                    <select id="id_usr" class="form-control">
+                    <option value="" disabled selected>--Selecciona--</option>
+                    <option value="1">Leonardo45</option>
+                    <option value="2">Maria64</option>
+                    <option value="3">Juanes78</option>
+                    <option value="mazda">Rosita35</option>
+                    <option value="toyota">Martinez02</option>
+                </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información más detallada</legend>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="modelo">Modelo </label>
+                            <input type="text" class="form-control" id="modelo" placeholder="Escribe el modelo de tu vehículo">
+                            <label for="anio">Año </label>
+                            <input type="text" class="form-control" id="anio" placeholder="Escribe cuándo compraste el vehículo">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="detalle">Detalle</label>
+                            <textarea id="detalle" class="form-control" placeholder="Escribe detalles sobre tu vehículo"></textarea>
+                            <label for="caja">Caja</label>
+                            <input type="number" class="form-control" min="0" max="20" id="caja">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="motor">Motor </label>
+                            <input type="number" class="form-control" min="0" max="20" id="motor">
+                            <!--step="5" Permite aumentar de a 5-->
+                            <label for="fechapub">Fecha Publicación </label>
+                            <input type="text" class="form-control" id="fechapub" placeholder="Escribe cuándo publicaste el vehículo">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="precio">Precio </label>
+                            <input type="number" class="form-control" min="0" max="200000000" id="precio">
+                            <label for="moneda">Moneda </label>
+                            <select id="moneda" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="eur">Euro</option>
+                                <option value="us">Dolar</option>
+                                <option value="pes">Peso</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información adicional</legend>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc_destac">Detalle destacado </label>
+                            <select id="cc_destac" class="form-control">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="cc_pic01">1</option>
+                                <option value="cc_pic02">2</option>
+                                <option value="cc_pic03">3</option>
+                            </select>
+                            <label for="cc_pic01">Detalle 1</label>
+                            <textarea id="cc_pic01" class="form-control" placeholder="Escribe detalles sobre tu vehículo"></textarea>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc_pic02">Detalle 2</label>
+                            <textarea id="cc_pic02" class="form-control" placeholder="Escribe detalles sobre tu vehículo"></textarea>
+                            <label for="cc_pic03">Detalle 3</label>
+                            <textarea id="cc_pic03" class="form-control" placeholder="Escribe detalles sobre tu vehículo"></textarea>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <center><input type="submit" class="btn btn-success rounded" value="Registrar"></center>
+            </form>
+            <!--Crea el formulario-->
+        </div>
+    </main>
+</body>
+
+</html>
