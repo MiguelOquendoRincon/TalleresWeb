@@ -1,0 +1,52 @@
+form {
+    font-size: 1rem;
+    color: #4f4f4f;
+}
+
+legend {
+    font-size: 1rem;
+    color: rgb(19, 19, 19);
+}
+
+label {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    display: block;
+    /*Permite que se desplieguen de manera vertical los formularios*/
+}
+
+textarea {
+    height: 5rem;
+    width: 17rem;
+}
+
+select,
+input {
+    padding: 0.5rem;
+    display: block;
+    width: 40%;
+    background-color: #e1e1e1;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: rgb(19, 19, 19);
+}
+
+fieldset {
+    width: 50%;
+}
+
+.boton {
+    color: white;
+    background-color: rgb(20, 160, 1);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    width: 20%;
+    margin-top: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+}
