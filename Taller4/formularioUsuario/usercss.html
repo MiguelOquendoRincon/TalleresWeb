@@ -4,48 +4,59 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Usercss</title>
-	<h1>Usercss</h1>
+	<h1>Formulario Usuario</h1>
 </head>
 
 <body>
-	<center><form>
-		<label>Id Usuario</label><br/>
-		<input type="text" name="IdUsercss" maxlength="11" class="texto"><br/>
-		<label>Id pais</label>
-		<select id="pais">
-			<option>--Selecciona--</option>
-			<option>57</option>
-			<option>58</option>
-			<option>59</option>
-			<option>60</option>
-			<option>61</option>
-			<option>62</option>
-			<option>63</option>
-			<option>64</option>
-			<option>65</option>
-			<option>66</option>
-		</select><br/>
-		<label>Nombre</label><br/>
-		<input type="text" name="Nombrecss" maxlength="25" class="texto"><br/>
-		<label>Apellido</label><br/>
-		<input type="text" name="apellidocss" maxlength="25"class="texto"><br/>
-		<label>Dirección</label><br/>
-		<input type="text" name="direccioncss" maxlength="45" class="texto"><br/>
-		<label>Identificación</label><br/>
-		<select id="document">
-			<option>CC</option>
-			<option>TI</option>
-		</select>
-		<input type="text" name="identificacioncss" maxlength="10" id="identi"><br/>
-		<label>Contraseña</label><br/>
-		<input type="password" name="contraseñacss" class="texto"><br/>
-		<label>Email</label><br/>
-		<input type="text" name="emailcss" maxlength="35" class="texto"><br/>
-		<label>Telefono</label><br/>
-		<input type="text" name="telefonocss" maxlength="10" class="texto"><br/><br/>
-		<input type="submit" name="enviar" value="Enviar" class="botones">
-		<input type="reset" name="limpiar" value="Limipiar" class="botones">
-</form></center>
+	<center>
+		<form>
+			<label>Id Usuario</label><br/>
+			<input type="text" name="IdUsercss" maxlength="11" placeholder="ID User" class="texto"><br/>
 
+			<label>Id pais</label>
+			<select id="pais">
+				<option>--Selecciona--</option>
+				<option>57</option>
+				<option>58</option>
+				<option>59</option>
+				<option>60</option>
+				<option>61</option>
+				<option>62</option>
+				<option>63</option>
+				<option>64</option>
+				<option>65</option>
+				<option>66</option>
+			</select><br/>
+
+			<label>Nombre</label><br/>
+			<input type="text" name="Nombrecss" maxlength="25" placeholder="Nombre" class="texto"><br/>
+
+			<label>Apellidos</label><br/>
+			<input type="text" name="apellidocss" maxlength="25" placeholder="Apellidos" class="texto"><br/>
+
+			<label>Dirección</label><br/>
+			<input type="text" name="direccioncss" maxlength="45" placeholder="Dirección" class="texto"><br/>
+
+			<label>Identificación</label><br/>
+			<select id="document">
+				<option>CC</option>
+				<option>TI</option>
+			</select>
+			<input type="text" name="identificacioncss" maxlength="10" id="identi" placeholder="Identificación"><br/>
+
+			<label>Email</label><br/>
+			<input type="text" name="emailcss" maxlength="35" placeholder="name@example.com" class="texto"><br/>
+
+			<label>Contraseña</label><br/>
+			<input type="password" name="contraseñacss" placeholder="Contraseña" placeholder="Contraseña" class="texto"><br/>
+
+			<label>Telefono</label><br/>
+			<input type="text" name="telefonocss" maxlength="10" placeholder="Telefono" class="texto"><br/><br/>
+			
+			<input type="submit" name="enviar" value="Enviar" class="botones">
+			<input type="reset" name="limpiar" value="Limipiar" class="botones">
+		</form>
+	</center>
 </body>
+
 </html>
