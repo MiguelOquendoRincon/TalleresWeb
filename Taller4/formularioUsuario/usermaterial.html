@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>UserMaterialize</title>
+	<h1>Formulario Usuario</h1>
+</head>
+
+
+<body>
+	<form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">fingerprint</i>
+                <label>ID Usuario</label><br/><br/>
+                <input type="text" id="IdUsercss" maxlength="11" placeholder="ID Usuario" class="validate">
+            </div>
+            
+            <div class="input-field col s6">
+                <i class="material-icons prefix">map</i>
+                <label>ID Pais</label><br/><br/>
+                <select class="browser-default">
+                    <option>--Selecciona--</option>
+                    <option>57</option>
+                    <option>58</option>
+                    <option>59</option>
+                    <option>60</option>
+                    <option>61</option>
+                    <option>62</option>
+                    <option>63</option>
+                    <option>64</option>
+                    <option>65</option>
+                    <option>66</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <label>Nombre</label><br/><br/>
+                <input type="text" name="Nombrecss" maxlength="25" placeholder="Nombre" class="validate">
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_box</i>
+                <label>Apellido</label><br/><br/>
+                <input type="text" name="apellidocss" maxlength="25" placeholder="Apellido" class="validate"><br/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">directions</i>
+                <label>Dirección</label><br/><br/>
+                <input type="text" name="direccioncss" maxlength="45" placeholder="Dirección" class="validate"><br/>
+            </div>
+            <div class="input-field col s3">
+                <i class="material-icons prefix">card_membership</i>
+                <label>Tipo Identificación</label><br/><br/>
+                <select class="browser-default">
+                    <option>CC</option>
+                    <option>TI</option>
+                </select>
+            </div>
+            <div class="input-field col s3">
+                <i class="material-icons prefix">card_membership</i>
+                <label>Nro. Identificación</label><br/><br/>
+                <input type="text" name="identificacioncss" maxlength="10" id="identi" placeholder="Identificación" class="validate"><br/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s5">
+                <i class="material-icons prefix">email</i>
+                <label>Email</label><br/><br/>
+                <input type="text" name="emailcss" maxlength="35" placeholder="name@example.com" class="validate"><br/>
+            </div>
+            <div class="input-field col s5">
+                <i class="material-icons prefix">lock_outline</i>
+                <label>Contraseña</label><br/><br/>
+                <input type="password" name="contraseñacss" placeholder="Contraseña" class="validate"><br/>
+            </div>
+            <div class="input-field col s2">
+                <i class="material-icons prefix">phone</i>
+                <label>Telefono</label><br/><br/>
+                <input type="text" name="telefonocss" maxlength="10" placeholder="Telefono" class="validate">
+            </div>
+
+        </div>
+    </form>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+        <i class="material-icons right">send</i>
+    </button>
+    <button class="btn waves-effect waves-light" type="reset" name="action">Limpiar
+        <i class="material-icons right">delete</i>
+    </button>
+</body>
+
+</html>
