@@ -1,14 +1,15 @@
 <html lang="en">
 
 <head>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<title>Datos de Usuario</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Datos de Usuario</title>
 	<h1>Datos Usuario</h1>
 </head>
 
 <body>
+    <script src="funciones.js"></script>
 	<h3>Rellena el siguiente formulario con tus datos</h3>
-	<form>
+	<form method=post onsubmit="submit()" name="formulario1">
         <label>ID Usuario</label>
         <select>
             <option>1</option>
@@ -48,22 +49,27 @@
         
 		<label>Usuario</label>
 		<br/>
-		<input type="text" name="User" class="inputs">
+		<input type="text" name="User" class="inputs" id="user" pattern="[A-Za-z0-9]{10,20}" placeholder="Recuerda usar solo letras y números" title="Solo se admiten letras y números" onchange="comprobarUsuario()">
         <br/><br/>
         
 		<label>Contraseña</label>
 		<br/>
-		<input type="password" name="Password" class="inputs">
+		<input type="password" name="password1" id="password1" class="inputs" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{15,20}" title="Debe contener mayúsculas, numeros, letras y/o los siguientes caracteres [#,%,/,&]">
+        <br/>
+
+        <label>Confirmar Contraseña</label>
+		<br/>
+		<input type="password" name="password2" id="password2" class="inputs" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{15,20}" title="Debe contener mayúsculas, numeros, letras y/o los siguientes caracteres [#,%,/,&]" onchange="comprobarClave()">
         <br/>
 
         <label>Email</label>
 		<br/>
-		<input type="email" name="Email" class="inputs">
+		<input type="email" name="mail" class="inputs">
         <br/>
 
         <label>Celular</label>
 		<br/>
-		<input type="tel" name="Celular" class="inputs" pattern="[0-9]{10}" placeholder="xxx-xxx-xxxx">
+		<input type="tel" name="Celular" class="inputs" pattern="[0-9]{10}" placeholder="xxx-xxx-xxxx" >
         <br/>
 
 		<table width="50%">
@@ -103,10 +109,11 @@
 			</td></tr>
 		</table>
 		
-		<input type="submit" name="entrar" value="Entrar" class="boton">
-		<input type="button" name="regresar" value="Regresar" onclick="location.href='index.html'" class="boton">
+        <input type="submit" name="entrar" value="Entrar" class="boton">
+		<input type="button" name="regresar" value="Regresar" onclick="location.href='integrantes.html'" class="boton">
 
     </form>
     
 </body>
 </html>
+
