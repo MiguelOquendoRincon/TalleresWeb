@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Datos de Usuario</title>
+	<h1>Datos Usuario</h1>
+</head>
+
+<body>
+	<h3>Rellena el siguiente formulario con tus datos</h3>
+	<form>
+        <label>ID Usuario</label>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <label>ID Pais</label>
+        <select>
+            <option>1 - Colombia</option>
+            <option>2 - Perú</option>
+            <option>3 - Ecuador</option>
+            <option>4 - Brasil</option>
+            <option>5 - Argentina</option>
+        </select></br>
+
+		<label>Nombre</label>
+		<br/>
+        <input type="text" name="Nombre" class="inputs"><br/>
+        
+		<label>Apellidos</label>
+        <br/>
+        <input type="text" name="Apellidos" class="inputs"><br/>
+
+        <label>Dirección</label></br>
+        <select>
+			<option>Cll</option>
+            <option>Cra</option>
+            <option>Av</option>
+            <option>Anv</option>
+            <option>Trans</option>
+		</select>
+		<input type="text" name="direccion" class="inputs">
+        <br/>
+        
+		<label>Usuario</label>
+		<br/>
+		<input type="text" name="User" class="inputs">
+        <br/><br/>
+        
+		<label>Contraseña</label>
+		<br/>
+		<input type="password" name="Password" class="inputs">
+        <br/>
+
+        <label>Email</label>
+		<br/>
+		<input type="email" name="Email" class="inputs">
+        <br/>
+
+        <label>Celular</label>
+		<br/>
+		<input type="tel" name="Celular" class="inputs" pattern="[0-9]{10}" placeholder="xxx-xxx-xxxx">
+        <br/>
+
+		<table width="50%">
+			<tr><td>
+			<fieldset>
+                <legend>Gustos Personales</legend>
+                
+                <label>Color Favorito</label>
+                <br/>
+                <input type="radio" name="colorfav" value="Rojo"><label>Rojo</label>
+                <input type="radio" name="colorfav" value="Verde"><label>Verde</label>
+                <input type="radio" name="colorfav" value="Amarillo"><label>Amarillo</label>
+                <input type="radio" name="colorfav" value="Otro"><label>Otro</label>
+                <input type="radio" name="colorfav" value="Azul"><label>Azul</label><br/><br/>
+
+                <label>Marca de Vehiculo Favorito</label>
+                <br/>
+                <input type="radio" name="marcafav" value="Mazda"><label>Mazda</label>
+                <input type="radio" name="marcafav" value="Toyota"><label>Toyota</label>
+                <input type="radio" name="marcafav" value="Chevrolet"><label>Chevrolet</label>
+                <input type="radio" name="marcafav" value="Mercedes"><label>Mercedes-Benz</label>
+                <input type="radio" name="marcafav" value="Audi"><label>Audi</label><br/><br/>
+                
+                <label>Estilo de Vehiculo Favorito</label>
+                <br/>
+                <input type="radio" name="estilofav" value="Deportivo"><label>Deportivo</label>
+                <input type="radio" name="estilofav" value="Familiar"><label>Familiar</label>
+                <input type="radio" name="estilofav" value="Camioneta"><label>Camioneta</label><br/><br/>
+
+                <label>Modelo de Vehiculo Favorito</label>
+                <br/>
+                <textarea type="text" name="modelofav" placeholder="Cuentanos un poco sobre tu modelo favorito" class="inputs"></textarea><br/><br/>
+
+                <label>Selecciona el rango de precios que se ajusta a ti</label><br/>
+                <label>5'000.000</label><input type="range" min="5000000" max="1000000000" id="precio"><label>100'000.000</label>
+
+			</td></tr>
+		</table>
+		
+		<input type="submit" name="entrar" value="Entrar" class="boton">
+		<input type="button" name="regresar" value="Regresar" onclick="location.href='index.html'" class="boton">
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+p{
+    text-align: justify;
+    margin: 1rem;
+}
+h1{
+    text-align: center;
+}
+
+button {
+    width: 10%;/*Toma el % de la totalidad disponible en pantalla*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 5px;
+    border: none;/*Quita el borde del boton*/
+    border-radius: 4px;
+}
+
+input.inputs{
+    width: 25%;
+    padding: 8px 10px;/*Funciona en el sentido de las manecillas del reloj. Top, right, bot, left*/
+    margin: 8px 5px;/*Igual que padding*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input.boton{
+    width: 15%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 8px;
+    margin: 8px 5px;
+    border: none;/*Quita el borde del boton*/
+    border-radius: 4px;
+}
+
