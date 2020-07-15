@@ -30,7 +30,7 @@
 
 		<label>Nombre</label>
 		<br/>
-        <input type="text" name="Nombre" class="inputs"><br/>
+        <input type="text" name="Nombre" class="inputs" id="nombre" ><br/>
         
 		<label>Apellidos</label>
         <br/>
@@ -61,6 +61,10 @@
 		<br/>
 		<input type="password" name="password2" id="password2" class="inputs" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{15,20}" title="Debe contener mayúsculas, numeros, letras y/o los siguientes caracteres [#,%,/,&]" onchange="comprobarClave()">
         <br/>
+        
+        <p id="textPw" class="alerta" href="javascript:escribir()"></p>
+        <p id="textPwR" class="alertaR" href="javascript:escribir()"></p><br/>
+
 
         <label>Email</label>
 		<br/>

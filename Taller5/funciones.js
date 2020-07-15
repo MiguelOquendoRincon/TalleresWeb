@@ -7,15 +7,19 @@ function comprobarClave(){
     if(expresion.test(clave2)){
         if(clave1 == clave2){
             if(clave1L >= 15 && clave1L<=20){
-                alert("Contraseñas Validas");
+                document.getElementById('textPw').innerHTML='Contraseñas Validas';
+                document.getElementById('textPwR').innerHTML='';
             }else{
-                alert("Contraseñas no Validas");
+                document.getElementById('textPwR').innerHTML='Contraseñas no Validas';
+                document.getElementById('textPw').innerHTML='';
             }
         } else{
-            alert("Las dos claves son distintas... Intentalo de nuevo");
+            document.getElementById('textPw').innerHTML='';
+            document.getElementById('textPwR').innerHTML='Las dos claves son distintas... Intentalo de nuevo';
         } 
     } else {
-        alert("La contraseña debe contener caracteres especiales y/o mayusculas");
+        document.getElementById('textPw').innerHTML='';
+        document.getElementById('textPwR').innerHTML='La contraseña debe contener caracteres especiales y/o mayusculas';
     }
 }
 
