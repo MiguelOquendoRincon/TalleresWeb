@@ -35,3 +35,19 @@ input.boton{
     border-radius: 4px;
 }
 
+body{
+    margin: 40px;
+}
+
+input.input_correct{
+    border-color: green;
+}
+
+input.input_incorrect{
+    border-color: red;
+}
+
+small.incorret{
+    color: red;
+}
+

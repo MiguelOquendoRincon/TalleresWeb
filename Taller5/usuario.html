@@ -4,14 +4,15 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<title>Datos de Usuario</title>
 	<h1>Datos Usuario</h1>
+    <script src="usuario.js"></script>
 </head>
 
-<body>
+<body class="container">
 	<h3>Rellena el siguiente formulario con tus datos</h3>
-	<form>
+	<form id="form">
         <label>ID Usuario</label>
         <select>
-            <option>1</option>
+            <option>1</option> 
             <option>2</option>
             <option>3</option>
             <option>4</option>
@@ -27,13 +28,17 @@
             <option>5 - Argentina</option>
         </select></br>
 
-		<label>Nombre</label>
-		<br/>
-        <input type="text" name="Nombre" class="inputs"><br/>
-        
-		<label>Apellidos</label>
+        <label for="nombre">Nombre</label>
         <br/>
-        <input type="text" name="Apellidos" class="inputs"><br/>
+        <input type="text" name="Nombre" class="inputs" id="nombre" onchange="validateName()"><br/>
+        <small id="aviso1"></small><br>
+
+
+        
+		<label for="apellidos">Apellidos</label>
+        <br/>
+        <input type="text" name="Apellidos" class="inputs" id="apellidos" onchange="validateLastName()"><br/>
+        <small id="aviso2"></small><br>
 
         <label>Dirección</label></br>
         <select>
@@ -58,8 +63,9 @@
 
         <label>Email</label>
 		<br/>
-		<input type="email" name="Email" class="inputs">
+		<input type="email" name="Email" class="inputs" id="email" onchange="validateEmail()">
         <br/>
+        <small id="avisoemail"></small><br>
 
         <label>Celular</label>
 		<br/>
