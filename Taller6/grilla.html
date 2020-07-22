@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grilla</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="librerias/jquery-3.3.1.min.js"></script>
+	<script src="librerias/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="container">
+        <h3>Veamos los datos que tenemos</h3>
+        <div class="section">
+            <button class="btn" id="actualizar">Actualizar</button>
+
+            <button class="btn" id="filtrar">Codigo postal que inicia por 9</button>
+            <table>
+                <thead>
+                    <th>Nombre</th>
+                    <th>Usuario</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Sitio Web</th>
+                    <th>Empresa</th>
+                    <th>Ciudad</th>
+                    <th>Calle</th>
+                    <th>Codigo Postal</th>
+                </thead>
+
+                <tbody id="datos">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="ajax.js"></script>
+</body>
+</html>
+
