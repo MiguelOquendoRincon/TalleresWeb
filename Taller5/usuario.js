@@ -42,3 +42,12 @@ function validateEmail(){
 		document.getElementById("avisoemail").className = "incorret";
 	}
 }
+
+
+/*default =  '<td>'+hijos[0].textContent+'</td>\
+				<td>'+hijos[1].textContent+'</td>\
+				<td>'+hijos[2].textContent+'</td>\
+				<td>'+hijos[3].textContent+'</td>\
+				<td>'+hijos[4].textContent+'</td>\
+				<td id = icon1></td>\
+				<td><button id="edit1" onclick="mostrarinputs(this)">editar</button></td>';*/

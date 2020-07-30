@@ -14,8 +14,11 @@ label{
 
 }
 form{
-	padding: 10px;
 	width: 50%;
+	border: 1px;
+	border-radius: 50px solid black;
+	float: center;
+	padding: 10px 20px;
 }
 input.texto{
 	border:none;
