@@ -9,26 +9,45 @@
 	<title>Registro de usuarios</title>
 </head>
 
-<body class="container row">
-	<h3 class="light center-align blue-text">Registro de usuario</h3>
+<body class="container row  deep-purple darken-1">
+	<h2 class="light center-align blue-text">Registro de usuario</h2>
 	<form class="col l6 m10 s12 offset-l3 offset-m1">
 		<div class="card">
-			<div class="card-panel  white">
-				<label>Nombres</label>
+			<div class="card-panel   indigo darken-4">
+				<label class="flow-text">Nombres</label>
 				<input type="text" id="nombres" placeholder="Nombre">
-				<label>Apellidos</label>
+				<label class="flow-text">Apellidos</label>
 				<input type="text" id="apellidos" placeholder="Apellidos">
-				<label>Usuario</label>
+				<label class="flow-text">Usuario</label>
 				<input type="text" id="usuario" placeholder="Usuario">
+				<label class="flow-text">Fecha nacimiento</label>
 				<input type="text" class="datepicker">
-				<label>Email</label>
+				<label class="flow-text">Email</label>
 				<input type="text" id="email" placeholder="Email">
-				<label>Telefono</label>
+				<label class="flow-text">Telefono</label>
 				<input type="text" id="telefono" placeholder="Telefono">
-				<label>Contraseña</label>
+				<label class="flow-text">Contraseña</label>
 				<input type="password" id="contraseña" placeholder="Contraseña">
-				<label>Confirmar contraseña</label>
+				<label class="flow-text">Confirmar contraseña</label>
 				<input type="password" id="confirmar" placeholder="Confirmar contraseña">
+				<label  class="flow-text">Lugar de Residencia</label>
+
+				<div class="input-field col s6">
+					<select class="browser-default">
+						<option>Departamento</option>
+					</select>
+			 	</div>
+
+			 	<div class="input-field col s6">
+					<select class="browser-default">
+						<option>Municipio</option>
+					</select>
+			 	</div><br><br>
+
+			 	<button class="btn waves-effect deep-purple darken-3"" type="submit" name="action">Enviar
+	            <i class="material-icons right">send</i>
+	            </button>
+
 			</div>
 		</div>
 	</form>
