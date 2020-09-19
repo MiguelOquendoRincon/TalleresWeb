@@ -60,7 +60,6 @@ def get_contact(id):
     cur.execute('SELECT id, nombres, apellidos, email, telefono, usuario FROM persona WHERE id = %s', (id))
     data = cur.fetchall()
     cur.close()
-    print(data[0])
     return render_template('edit-user.html', contact = data[0])
 
 @app.route('/update/<id>', methods=['POST'])

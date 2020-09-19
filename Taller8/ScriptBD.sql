@@ -26,7 +26,6 @@ CREATE TABLE persona(
 id integer NOT NULL AUTO_INCREMENT,
 nombres varchar(60) NOT NULL,
 apellidos varchar(60) NOT NULL,
-fk_id_tipoDocumento integer,
 tipoDocumento varchar(5),
 documento integer NOT NULL,
 municipio varchar(60),
@@ -36,7 +35,6 @@ email varchar(60) NOT NULL,
 telefono integer NOT NULL,
 usuario varchar(60) NOT NULL,
 contrasena varchar(60) NOT NULL,
-CONSTRAINT fk_persona_documento FOREIGN KEY(fk_id_tipoDocumento) REFERENCES tipoDocumento(id),
 PRIMARY KEY(id)
 );
 
