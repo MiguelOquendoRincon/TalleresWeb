@@ -9,46 +9,47 @@
 	<title>Registro de usuarios</title>
 </head>
 
-<body class="container deep-purple darken-1">
-	<h2 class="card-panel light center-align blue-text indigo darken-4">Registro de usuario</h2>
-	<form>
-		<div class="transparent card-panel row">
+<body class="container  grey lighten-3">
+	<h2 class="card-panel light center-align grey darken-2 white-text">Registro de usuario</h2>
+	<!-- -->
+	<form action="/add_user" method="POST">
+		<div class="card-panel row grey darken-2">
 			<div class="col s7">
 				<label class="flow-text">Nombres</label>
-				<input type="text" id="nombres" placeholder="Nombre">
+				<input type="text" id="nombres" name="nombre" placeholder="Nombre">
 				<label class="flow-text">Apellidos</label>
-				<input type="text" id="apellidos" placeholder="Apellidos">
+				<input type="text" id="apellidos" name="apellido" placeholder="Apellidos">
 				<div class="col s6">
 					<label class="flow-text">Tipo de documento</label>
-					<select class="browser-default">
-						<option>CC</option>
-						<option>TI</option>
+					<select class="browser-default" name="tipoId">
+						<option id="1">CC</option>
+						<option id="2">TI</option>
 					</select>
 				</div>
 				<div class="col s6">
 					<label class="flow-text">Documento</label>
-					<input type="text" id="documento" placeholder="Documento">
+					<input type="text" id="documento" name="documento" placeholder="Documento">
 				</div>
 				<label class="flow-text">Lugar de Nacimiento</label>
-				<input type="text" id="lugarN" placeholder="Lugar de Nacimiento">
+				<input type="text" id="lugarN" name="lugarNacimiento" placeholder="Lugar de Nacimiento">
 				<label class="flow-text">Fecha nacimiento</label>
-				<input type="text" class="datepicker" placeholder="Fecha de Nacimiento">
+				<input type="text" name="fechaNacimiento" class="datepicker" placeholder="Fecha de Nacimiento">
 				<label class="flow-text">Email</label>
-				<input type="text" id="email" placeholder="Email">
+				<input type="text" id="email" name="email" placeholder="Email">
 			</div>
 			<div class="col s5">
 				<label class="flow-text">Telefono</label>
-				<input type="text" id="telefono" placeholder="Telefono">
+				<input type="text" id="telefono" name="telefono" placeholder="Telefono">
 				<label class="flow-text">Usuario</label>
-				<input type="text" id="usuario" placeholder="Usuario">
+				<input type="text" id="usuario" name="usuario" placeholder="Usuario">
 				<label class="flow-text">Contraseña</label>
-				<input type="password" id="contraseña" placeholder="Contraseña">
+				<input type="password" id="contraseña" name="password" placeholder="Contraseña">
 				<label class="flow-text">Confirmar contraseña</label>
-				<input type="password" id="confirmar" placeholder="Confirmar contraseña">
+				<input type="password" id="confirmar" name="password" placeholder="Confirmar contraseña">
 				<label  class="flow-text">Lugar de Residencia</label>
 
 				<div class="input-field col s6">
-					<select id="departamentos" class="browser-default">
+					<select id="departamentos" name="departamento" class="browser-default">
 						<option>Departamento</option>
 						<option>Amazonas</option>
 						<option>Antioquia</option>
@@ -87,12 +88,12 @@
 			 	</div>
 
 			 	<div class="input-field col s6">
-					<select id="municipios" class="browser-default">
+					<select id="municipios" name="municipio" class="browser-default">
 						<option>Municipio</option>
 					</select>
 			 	</div><br><br>
 
-			 	<button class="btn waves-effect deep-purple darken-3"" type="submit" name="action">Enviar
+			 	<button class="btn waves-effect teal" type="submit" name="action">Enviar
 	            <i class="material-icons right">send</i>
 	            </button>
 	        </div>
